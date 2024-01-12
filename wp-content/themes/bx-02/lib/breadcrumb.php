@@ -34,6 +34,18 @@ function get_breadcrumb()
             $output .= '<li class="c-breadcrumb-item">
               <a href="' . esc_url(home_url('/news/')) . '" class="c-text-link c-content-l" aria-current="page">お知らせ</a>
             </li>';
+        } elseif(is_post_type_archive('gallery')) {
+            $output .= '<li class="c-breadcrumb-item">
+              <a href="' . esc_url(home_url('/gallery')) . '" class="c-text-link c-content-l" aria-current="page">ギャラリー</a>
+            </li>';
+        } elseif(is_post_type_archive('review')) {
+            $output .= '<li class="c-breadcrumb-item">
+              <a href="' . esc_url(home_url('/review/')) . '" class="c-text-link c-content-l" aria-current="page">お客様の声</a>
+            </li>';
+        } elseif(is_post_type_archive('staff')) {
+            $output .= '<li class="c-breadcrumb-item">
+              <a href="' . esc_url(home_url('/staff/')) . '" class="c-text-link c-content-l" aria-current="page">スタッフ</a>
+            </li>';
         } elseif (is_category()) {
             $output .= '<li class="c-breadcrumb-item">
               <a href="' . home_url('/blog/') . '" class="c-text-link c-content-l">ブログ</a>

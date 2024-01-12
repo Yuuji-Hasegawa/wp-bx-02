@@ -48,6 +48,8 @@
 		"birth": "20YY年MM月dd日",
 		"open": "09:00",
 		"close": "19:00",
+    "dayopen": "11:30 - 13:30(L.O. 13:00)",
+    "nightopen": "17:00 - 22:00(L.O. 21:30)",
     "workday": "平日",
 		"dayoff": "土日祝・年末年始",
 		"service": [
@@ -57,7 +59,21 @@
 			"事業項目4",
 			"事業項目5",
 			"事業項目6"
-		]
+		],
+    "access": "JR大阪駅徒歩n分",
+		"parking": "あり<br />敷地内にnn台有り<br />近隣にコインパーキングあり",
+		"station": "JR大阪駅",
+    "daybud": "&yen;0,000 ~ &yen;0,000",
+    "nightbud": "&yen;0,000 ~ &yen;0,000",
+    "sheets": "nn席 + n名までのお座敷がnつ",
+		"reserve": "予約可能",
+    "rental": "貸切可能<br />nn~nn人可",
+		"pay": [
+			"現金",
+			"クレジットカード（VISA、MASTER、JCB、AMEX、Diners）",
+			"電子マネー（交通系電子マネー、iD、QUICPay、PayPay）"
+		],
+		"smoking": "完全禁煙"
 	},
 	"term": {
     "company": "BLUE B NOSE",

@@ -1,6 +1,23 @@
 <?php get_header();
 post_view_count();
 if (have_posts()):?>
+<div class="c-puton c-puton--filter">
+  <picture class="o-frame o-frame--switch-l">
+    <source type="image/avif"
+      srcset="<?php echo get_template_directory_uri();?>/img/hero.avif" />
+    <source type="image/webp"
+      srcset="<?php echo get_template_directory_uri();?>/img/hero.webp" />
+    <img
+      src="<?php echo get_template_directory_uri();?>/img/hero.png"
+      width="100%" height="100%" decoding="async" fetchpriority="high" alt="" />
+  </picture>
+  <div class="c-puton__inner o-cover">
+    <span class="c-hero-copy o-cover__middle">
+      <span class="c-display-l u-text-weight-b u-font-en-con">Blog</span>
+      <span class="c-display-xs">ブログ</span>
+    </span>
+  </div>
+</div>
 <div class="o-box o-box--post o-center o-center--content u-bg-qua u-mt-2xl u-pb-2xl">
   <h1 class="c-heading"><?php the_title();?></h1>
   <div class="o-stack o-stack--l">

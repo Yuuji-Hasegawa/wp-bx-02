@@ -1,6 +1,22 @@
 <?php get_header();?>
-<div class="o-box o-box--transparent o-center u-bg-qua u-pb-2xl">
-  <h1 class="c-heading u-text-weight-b"><?php the_title();?></h1>
+<div class="c-puton c-puton--filter">
+  <picture class="o-frame o-frame--switch-l">
+    <source type="image/avif"
+      srcset="<?php echo get_template_directory_uri();?>/img/hero.avif" />
+    <source type="image/webp"
+      srcset="<?php echo get_template_directory_uri();?>/img/hero.webp" />
+    <img
+      src="<?php echo get_template_directory_uri();?>/img/hero.png"
+      width="100%" height="100%" decoding="async" fetchpriority="high" alt="" />
+  </picture>
+  <div class="c-puton__inner o-cover">
+    <h1 class="c-hero-copy o-cover__middle">
+      <span class="c-display-l u-text-weight-b u-font-en-con">Privacy Policy</span>
+      <span class="c-display-xs"><?php the_title();?></span>
+    </h1>
+  </div>
+</div>
+<div class="o-box o-box--transparent o-center u-bg-qua u-pt-2xl u-pb-2xl">
   <p class="c-content-l">
     <?php echo get_vars('term', 'company');?>（以下「当社」といいます。）は、当社の提供するサービス（以下「本サービス」といいます。）における、ユーザーについての個人情報を含む利用者情報の取扱いについて、以下のとおりプライバシーポリシー（以下「本ポリシー」といいます。）を定めます。
   </p>
@@ -84,12 +100,12 @@
         <li class="u-mt-m">
           Google Analytics
           <dl class="o-sidebar o-sidebar--table u-mt-s">
-            <dt class="o-box o-box--thead c-content-l u-bg-secondary">提携先</dt>
-            <dd class="o-box o-box--tbody c-content-l">グーグル合同会社</dd>
-            <dt class="o-box o-box--thead c-content-l u-bg-secondary">利用目的</dt>
-            <dd class="o-box o-box--tbody c-content-l">アクセス情報の解析、サービス、サイトの改善</dd>
-            <dt class="o-box o-box--thead c-content-l u-bg-secondary">プライバシーポリシーのURL</dt>
-            <dd class="o-box o-box--tbody c-content-l">
+            <dt class="o-box o-box--thead o-box--ghost-thead c-content-l">提携先</dt>
+            <dd class="o-box o-box--tbody o-box--ghost-tbody c-content-l">グーグル合同会社</dd>
+            <dt class="o-box o-box--thead o-box--ghost-thead c-content-l">利用目的</dt>
+            <dd class="o-box o-box--tbody o-box--ghost-tbody c-content-l">アクセス情報の解析、サービス、サイトの改善</dd>
+            <dt class="o-box o-box--thead o-box--ghost-thead c-content-l">プライバシーポリシーのURL</dt>
+            <dd class="o-box o-box--tbody o-box--ghost-tbody c-content-l">
               <a class="o-icon-parent u-full-width c-text-link c-text-link--underline"
                 href="https://policies.google.com/privacy?hl=ja" target="_blank" rel="noopener">
                 <span class="u-font-en-con">
@@ -103,8 +119,8 @@
                 </svg>
               </a>
             </dd>
-            <dt class="o-box o-box--thead c-content-l u-bg-secondary">オプトアウト（無効化）URL</dt>
-            <dd class="o-box o-box--tbody c-content-l">
+            <dt class="o-box o-box--thead o-box--ghost-thead c-content-l">オプトアウト（無効化）URL</dt>
+            <dd class="o-box o-box--tbody o-box--ghost-tbody c-content-l">
               <a class="o-icon-parent u-full-width c-text-link c-text-link--underline"
                 href="https://support.google.com/analytics/answer/181881?hl=ja" target="_blank" rel="noopener">
                 <span class="u-font-en-con">
@@ -141,40 +157,40 @@
     <dd class="c-content-l">
       <p>当社は、以下のとおりユーザーの個人情報を共同利用します。</p>
       <dl class="o-sidebar o-sidebar--table">
-        <dt class="o-box o-box--thead c-content-l u-bg-secondary">
+        <dt class="o-box o-box--thead o-box--ghost-thead c-content-l">
           <span class="o-icon-parent">
             <span class="u-font-en-con">(1)</span>
             共同して利用される個人情報の項目
           </span>
         </dt>
-        <dd class="o-box o-box--tbody c-content-l">
+        <dd class="o-box o-box--tbody o-box--ghost-tbody c-content-l">
           <ul class="c-disc-list">
             <li>氏名</li>
             <li>メールアドレス</li>
             <li>その他当社が定める入力フォームにユーザーが入力する情報</li>
           </ul>
         </dd>
-        <dt class="o-box o-box--thead c-content-l u-bg-secondary">
+        <dt class="o-box o-box--thead o-box--ghost-thead c-content-l">
           <span class="o-icon-parent">
             <span class="u-font-en-con">(2)</span>
             共同して利用する者の範囲
           </span>
         </dt>
-        <dd class="o-box o-box--tbody c-content-l">当社と機密保持契約を結んだ個人または法人</dd>
-        <dt class="o-box o-box--thead c-content-l u-bg-secondary">
+        <dd class="o-box o-box--tbody o-box--ghost-tbody c-content-l">当社と機密保持契約を結んだ個人または法人</dd>
+        <dt class="o-box o-box--thead o-box--ghost-thead c-content-l">
           <span class="o-icon-parent">
             <span class="u-font-en-con">(3)</span>
             共同して利用する者の利用目的
           </span>
         </dt>
-        <dd class="o-box o-box--tbody c-content-l">当該サービスにおける利用目的と同じ</dd>
-        <dt class="o-box o-box--thead c-content-l u-bg-secondary">
+        <dd class="o-box o-box--tbody o-box--ghost-tbody c-content-l">当該サービスにおける利用目的と同じ</dd>
+        <dt class="o-box o-box--thead o-box--ghost-thead c-content-l">
           <span class="o-icon-parent">
             <span class="u-font-en-con">(4)</span>
             個人情報の管理について責任を有する者の氏名または名称
           </span>
         </dt>
-        <dd class="o-box o-box--tbody c-content-l">
+        <dd class="o-box o-box--tbody o-box--ghost-tbody c-content-l">
           <?php echo get_vars('term', 'acount');?>
         </dd>
       </dl>
@@ -203,16 +219,16 @@
         ご意見、ご質問、苦情のお申出その他利用者情報の取扱いに関するお問い合わせは、下記の窓口までお願いいたします。
       </p>
       <dl class="o-sidebar o-sidebar--table">
-        <dt class="o-box o-box--thead c-content-l u-bg-secondary">屋号/商号</dt>
-        <dd class="o-box o-box--tbody c-content-l">
+        <dt class="o-box o-box--thead o-box--ghost-thead c-content-l">屋号/商号</dt>
+        <dd class="o-box o-box--tbody o-box--ghost-tbody c-content-l">
           <?php echo get_vars('term', 'company');?>
         </dd>
-        <dt class="o-box o-box--thead c-content-l u-bg-secondary">個人情報取扱責任者</dt>
-        <dd class="o-box o-box--tbody c-content-l">
+        <dt class="o-box o-box--thead o-box--ghost-thead c-content-l">個人情報取扱責任者</dt>
+        <dd class="o-box o-box--tbody o-box--ghost-tbody c-content-l">
           <?php echo get_vars('term', 'acount');?>
         </dd>
-        <dt class="o-box o-box--thead c-content-l u-bg-secondary">連絡先</dt>
-        <dd class="o-box o-box--tbody c-content-l">
+        <dt class="o-box o-box--thead o-box--ghost-thead c-content-l">連絡先</dt>
+        <dd class="o-box o-box--tbody o-box--ghost-tbody c-content-l">
           <a class="c-text-link c-text-link--underline"
             href="mailto:<?php echo get_vars('mail', 'primary');?>"
             target="_blank" rel="noopener"><span
